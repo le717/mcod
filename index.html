@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical Chairs of Doom Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="karla">
+  <header>
+    <h1>Musical Chairs of Doom Calculator</h1>
+  </header>
+
+  <main>
+    <p style="text-align: center;">
+      Calculate many players, chairs, and rounds that are needed for a successful game of Musical Chairs of Doom.<br>
+      Watch an <a href="https://www.instagram.com/reel/DGde2F0Aflc/" tabindex="-1">Instagram reel</a> showing the game play.
+    </p>
+
+    <form>
+      <label>
+        <span class="required">How many players will be eliminated each round?</span>
+        <input type="number" inputmode="numeric" name="elimination" id="elmination" min="1" step="1" placeholder="2" required>
+      </label>
+
+      <label>
+        <span>How many rounds should be played?</span>
+        <input type="number" inputmode="numeric" name="total-rounds" id="total-rounds" min="1" step="1" placeholder="4">
+      </label>
+
+      <p class="option">or</p>
+
+      <label>
+        <span>How many players are there?</span>
+        <input type="number" inputmode="numeric" name="total-players" id="total-players" min="2" step="1" placeholder="9">
+      </label>
+
+      <details>
+        <summary>Additional controls</summary>
+        <label>
+          <span class="required">How many players win the game?</span>
+          <input type="number" inputmode="numeric" name="total-winners" id="total-winners" min="1" step="1" placeholder="1" value="1" required>
+        </label>
+      </details>
+      <button type="submit" class="btn-simulate">Generate</button>
+    </form>
+
+    <section class="output"></section>
+  </main>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
